@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Content-Style-Type" content="text/css">
+    <link rel="stylesheet" href="css.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <title>案内ページ</title>
+    <script src="/libs/qimessaging/2/qimessaging.js"></script><!--scriptタグで、javascriptを記述 -->
+    <!--外部のjavascriptファイルを実行したい場合、srcを書く必要がある。specifies the URI of the image resource. -->
+    <script>
+      var session =new QiSession();
+      var session;//変数の定義
+      QiSession( function (s){
+        session = s;
+      });//
+
+      function introductionButtonClicked() {
+        /*session.service("ALTextToSpeech").then(function (tts) {
+          tts.say("Hello");
+        });*/
+        window.location.href = 'introduction.html';
+      }
+      function educationButtonClicked() {
+        /*session.service("ALTextToSpeech").then(function (tts) {
+          tts.say("Hello");
+        });*/
+        //window.location.href = 'education.html';
+      }
+
+    </script>
+  </head>
+  <body>
+    <div class="button_wrapper">
+    <button style="position:absolute; left:5vw; top:30vh" type="button" class="index_btn btn-warning" onclick="introductionButtonClicked();">研究紹介</button>
+    <button style="position:absolute; left:55vw; top:30vh" type="button" class="index_btn btn-default" onclick="questionnaireButtonClicked();">アンケート</button>
+  </div>
+  </body>
+</html>

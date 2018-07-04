@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Content-Style-Type" content="text/css">
+    <link rel="stylesheet" href="css.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <title>研究紹介</title>
+    <script src="/libs/qimessaging/2/qimessaging.js"></script><!--scriptタグで、javascriptを記述 -->
+    <!--外部のjavascriptファイルを実行したい場合、srcを書く必要がある。specifies the URI of the image resource. -->
+    <script>
+      var session =new QiSession();
+      var session;//変数の定義
+      QiSession( function (s){
+        session = s;
+      });//
+
+      function sportsButtonClicked() {
+        /*session.service("ALTextToSpeech").then(function (tts) {
+          tts.say("Hello");
+        });*/
+        window.location.href = 'sports.html';
+      }
+      function educationButtonClicked() {
+        /*session.service("ALTextToSpeech").then(function (tts) {
+          tts.say("Hello");
+        });*/
+        window.location.href = 'education.html';
+      }
+      function backButtonClicked() {
+        /*session.service("ALTextToSpeech").then(function (tts) {
+          tts.say("Hello");
+        });*/
+        window.location.href = 'index.html';
+      }
+
+    </script>
+  </head>
+  <body>
+    <div class="scroll-wrap">
+      <div class="button_wrapper" style="text-align: center;">
+        <button type="button" class="introduction_btn btn-success" onclick="sportsButtonClicked();">スポーツ</button>
+        <button type="button" class="introduction_btn btn-primary" onclick="educationButtonClicked();">学校教育</button>
+        <br>
+        <button type="button" class="introduction_btn btn-danger" onclick="educationButtonClicked();">テストボタン１</button>
+        <button type="button" class="introduction_btn btn-info" onclick="educationButtonClicked();">テストボタン２</button>
+      </div>
+    </div>
+    <div class="back_wrapper">
+      <button style="position: absolute; left:5vw; top:85vh; type="button" class="back_btn" onclick="backButtonClicked();">戻る</button>
+    </div>
+  </body>
+</html>

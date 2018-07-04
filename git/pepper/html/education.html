@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Content-Style-Type" content="text/css">
+    <link rel="stylesheet" href="css.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <title>学校教育</title>
+    <script src="/libs/qimessaging/2/qimessaging.js"></script><!--scriptタグで、javascriptを記述 -->
+    <script>
+      function sogoButtonClicked(){
+        window.location.href = 'sogo.html';
+      }
+
+      function backButtonClicked() {
+        /*session.service("ALTextToSpeech").then(function (tts) {
+          tts.say("Hello");
+        });*/
+        window.location.href = 'introduction.html';
+      }
+    </script>
+  </head>
+  <body>
+    <div class="scroll-wrap">
+      <div id=button_wrapper" class="button_wrapper">
+      <button type="button" class="education_btn btn-info" onclick="sogoButtonClicked();">十河</button>
+      <button type="button" class="education_btn btn-success" onclick="sampleButtonClicked();">研究名</button>
+      <button type="button" class="education_btn btn-warning" onclick="sampleButtonClicked();">研究名</button>
+      <button type="button" class="education_btn btn-warning" onclick="sampleButtonClicked();">研究名</button>
+      <br>
+      <button type="button" class="education_btn btn-danger" onclick="sampleButtonClicked();">研究名</button>
+      <button type="button" class="education_btn btn-warning" onclick="sampleButtonClicked();">研究名</button>
+      <button type="button" class="education_btn btn-danger" onclick="sampleButtonClicked();">研究名</button>
+      <button type="button" class="education_btn btn-warning" onclick="sampleButtonClicked();">研究名</button>
+      </div>
+    </div>
+    <div class="back_wrapper">
+      <button style="position: absolute; left:5vw; top:85vh; type="button" class="back_btn" onclick="backButtonClicked();">戻る</button>
+    </div>
+  </body>
+</html>

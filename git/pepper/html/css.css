@@ -1,0 +1,70 @@
+.index_btn{
+    font-size: 5vw;
+    width:40vw;
+    height:40vh;
+}
+.introduction_btn{
+    font-size: 5vw;
+    color:#FFF;
+    width:40vw;
+    height:35vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    display:inline-block;
+}
+.sports_btn{
+    font-size: 5vw;
+    color:#FFF;
+    width:40vw;
+    height:35vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    display:inline-block;
+}
+.education_btn{
+    font-size: 5vw;
+    color:#FFF;
+    width:40vw;
+    height:35vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    display:inline-block;
+}
+.back_btn{
+    font-size: 5vw;
+    width:20vw;
+    height:15vh;
+}
+.next_btn{
+    font-size: 5vw;
+    width:20vw;
+    height:15vh;
+}
+.list_btn{
+    font-size: 5vw;
+    width:30vw;
+    height:15vh;
+}
+.top_btn{
+    font-size: 5vw;
+    width:25vw;
+    height:15vh;
+}
+.square_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+.scroll_wrap{
+    width: 100vw;
+    height: 70vh;
+}
+.button_wrapper{
+    width: 100vw;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling
+}

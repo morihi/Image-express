@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Content-Style-Type" content="text/css">
+    <link href="css.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>十河</title>
+  </head>
+  <body>
+    <div class="slidearea">
+      <img style="width: 60vw; position: absolute; left:20vw;" id="slide1" class="slide1" src="image/slide1.png">
+      <img style="width: 60vw; position: absolute; left:20vw;" id="slide2" class="slide2" src="image/slide2.png">
+      <img style="width: 80vw; position: absolute; left:10vw;" id="map1" class="map1" src="image/map1.png">
+      <img style="width: 80vw; position: absolute; left:10vw;" id="profile1" class="profile1" src="image/profile1.png">
+    </div>
+    <div class="back_wrapper">
+      <button style="position: absolute; left:5vw; top:85vh; type="button" class="back_btn" onclick="backButtonClicked();">戻る</button>
+      <button style="position: absolute; right:5vw; top:85vh; type="button"  id="next_btn" class="next_btn" onclick="nextButtonClicked();">次へ</button>
+      <button style="position: absolute; right:5vw; top:85vh; type="button" id="list_btn" class="list_btn" onclick="listButtonClicked();">研究一覧へ</button>
+      <button style="position: absolute; left:37.5vw; top:85vh; type="button" id="top_btn" class="top_btn" onclick="topButtonClicked();">トップへ</button>
+    </div>
+  </body>
+</html>
