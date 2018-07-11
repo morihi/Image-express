@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>確認</title>
+  </head>
+  <body>
+    <h1>確認</h1>
+    <form id = "form" method="POST">
+      <div>
+        <span>name:</span>
+        <input type="text" id = "user" value="<%= name %>" readonly />
+      </div>
+      <div>
+        <span>class:</span>
+        <input type="text" id = "classnumber" value="<%= class_name %>" readonly />
+      </div>
+      <div>
+        <span>pass:</span>
+        <input type="text" id = "password" value="<%= pass %>" readonly />
+      </div>
+      <div>
+        <button id = "btn_back">戻る</button>
+        <button id = "btn_regist">登録</button>
+      </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type = "text/javascript" src = "/js/confirm.js"></script>
+  </body>
+</html>
